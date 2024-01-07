@@ -1,6 +1,6 @@
 import { useState } from "react"
 let GLOBAL_ID = 4;
-function App() {
+async function App() {
   const [todos, setTodos] = useState([{
     id: 1,
     title: "Go to gym",
@@ -12,8 +12,15 @@ function App() {
   }, {
     id: 3,
     title: "Eat foor",
-    description: "Need to eat food from 2-4 PM"
+    description: "Need to eat food from 2-4 PM",
+    id: 4,
+    title: "sleep",
+    description: "sleep from 11-5am",
+    id: 5,
+    title: "",
+    description: "m"
   }])
+  
 
   function addTodo() {
     setTodos([...todos, {
